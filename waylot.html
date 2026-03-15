@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Waylot — Кейс</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Unbounded:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="case.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="case-header">
+    <a href="index.html" class="case-back">← Назад</a>
+    <span class="case-header-name">Таня Таганович</span>
+  </header>
+
+  <!-- Hero -->
+  <section class="case-hero">
+    <p class="case-label">Стартап · 2025</p>
+    <h1 class="case-title">Waylot</h1>
+    <p class="case-subtitle">Мультиязычное приложение объявлений для Люксембурга</p>
+  </section>
+
+  <!-- Cover -->
+  <div class="case-cover">
+    <img src="assets/wlt/3.webp" alt="Waylot — Easy to find, easy to sell in Luxembourg" class="case-cover-desktop">
+    <div class="case-cover-duo">
+      <figure class="case-captioned"><img src="assets/wlt/wlt2.webp" alt="Waylot — главная"><figcaption>Главная</figcaption></figure>
+      <figure class="case-captioned"><img src="assets/wlt/wlt1.webp" alt="Waylot — объявление"><figcaption>Объявление</figcaption></figure>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section class="case-section">
+    <h2 class="case-section-title">О проекте</h2>
+    <div class="case-meta-grid">
+      <div class="case-meta-item">
+        <span class="case-meta-label">Клиент</span>
+        <span class="case-meta-value">Waylot, стартап из Люксембурга</span>
+      </div>
+      <div class="case-meta-item">
+        <span class="case-meta-label">Продукт</span>
+        <span class="case-meta-value">Мультиязычное приложение объявлений,<br>15&nbsp;системных языков</span>
+      </div>
+      <div class="case-meta-item">
+        <span class="case-meta-label">Платформа</span>
+        <span class="case-meta-value">Мобильное приложение (Compose) + Веб (React)</span>
+      </div>
+      <div class="case-meta-item">
+        <span class="case-meta-label">Команда</span>
+        <span class="case-meta-value">13 человек, единственный дизайнер</span>
+      </div>
+      <div class="case-meta-item">
+        <span class="case-meta-label">Моя роль</span>
+        <span class="case-meta-value">Полный цикл: исследования → сценарии → дизайн&#8209;система → 250+&nbsp;экранов</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Solutions -->
+  <section class="case-section">
+    <h2 class="case-section-title">Решения</h2>
+
+    <!-- Multilanguage -->
+    <div class="case-block">
+      <div class="case-block-text">
+        <h3 class="case-block-heading">Мультиязычность</h3>
+        <p class="case-block-desc">Люксембург — страна с тремя официальными языками. Приложение поддерживает <strong>15 системных языков</strong> с гибкой настройкой: пользователь выбирает язык интерфейса и отдельно — язык перевода контента других пользователей.</p>
+        <p class="case-block-desc"><strong>ИИ-агент</strong> автоматически переводит объявления, описания и чаты. Пользователь переключает <strong>перевод/оригинал в одно касание</strong>, без перехода на другой экран.</p>
+      </div>
+      <div class="case-block-media case-media-trio">
+        <figure class="case-captioned"><img src="assets/wlt/wlt3.webp" alt="Настройка языков"><figcaption>Настройка языков</figcaption></figure>
+        <figure class="case-captioned"><img src="assets/wlt/wlt5.webp" alt="Переведённая версия"><figcaption>Перевод контента</figcaption></figure>
+        <figure class="case-captioned"><img src="assets/wlt/wlt4.webp" alt="Описание на люксембургском"><figcaption>Оригинал</figcaption></figure>
+      </div>
+    </div>
+
+    <!-- Map -->
+    <div class="case-block">
+      <div class="case-block-text">
+        <h3 class="case-block-heading">Поиск на карте</h3>
+        <p class="case-block-desc">Геолокация <strong>расширяет границы маленьких городов</strong> и делает поиск объявлений удобнее. Пользователь видит объявления рядом с собой и может искать в других районах <strong>прямо на карте</strong>.</p>
+      </div>
+      <div class="case-block-media case-media-duo">
+        <figure class="case-captioned"><img src="assets/wlt/wlt6.webp" alt="Результаты поиска"><figcaption>Результаты поиска</figcaption></figure>
+        <figure class="case-captioned"><img src="assets/wlt/wlt7.webp" alt="Поиск на карте"><figcaption>Поиск на карте</figcaption></figure>
+      </div>
+    </div>
+
+    <!-- Posting -->
+    <div class="case-block">
+      <div class="case-block-text">
+        <h3 class="case-block-heading">Размещение объявлений</h3>
+        <p class="case-block-desc">Ключевая задача — <strong>универсальный виджет характеристик</strong> товаров. Разные категории требуют разных типов данных: integer, float, boolean, multiselect. Выстроили структуру <strong>many-to-many</strong> и описали логику виджетов для каждого типа — с учётом контекста использования: <strong>создание объявления, фильтрация в поиске и отображение в карточке</strong> товара.</p>
+      </div>
+      <div class="case-block-media case-media-single">
+        <figure class="case-captioned"><img src="assets/wlt/wlt8.webp" alt="Создание объявления"><figcaption>Создание объявления</figcaption></figure>
+      </div>
+    </div>
+
+    <!-- Filters -->
+    <div class="case-block">
+      <div class="case-block-text">
+        <h3 class="case-block-heading">Фильтрация и поиск</h3>
+        <p class="case-block-desc">Один из ключевых сценариев — найти подходящий товар. Фильтрация построена как <strong>гибкая «простыня»</strong>: пользователь сам выбирает, по каким характеристикам искать. Реализовано с учётом <strong>привычных паттернов</strong> и технических возможностей платформы.</p>
+      </div>
+      <div class="case-block-media case-media-duo">
+        <figure class="case-captioned"><img src="assets/wlt/wlt9.webp" alt="Экран фильтров"><figcaption>Фильтры</figcaption></figure>
+        <figure class="case-captioned"><img src="assets/wlt/wlt10.webp" alt="Результаты с фильтрами"><figcaption>Результаты</figcaption></figure>
+      </div>
+    </div>
+
+    <!-- Illustrations -->
+    <div class="case-block">
+      <div class="case-block-text">
+        <h3 class="case-block-heading">Иллюстрации</h3>
+        <p class="case-block-desc">На экранах пустых состояний и системных сообщений используются <strong>3D-иллюстрации</strong>. Объёмный стиль поддерживает <strong>дружелюбный и современный</strong> характер приложения.</p>
+      </div>
+      <div class="case-block-media case-media-quad">
+        <figure class="case-captioned"><img src="assets/wlt/wlt11.webp" alt="Избранное"><figcaption>Избранное</figcaption></figure>
+        <figure class="case-captioned"><img src="assets/wlt/wlt12.webp" alt="Страница не найдена"><figcaption>Ошибка</figcaption></figure>
+        <figure class="case-captioned"><img src="assets/wlt/wlt13.webp" alt="Объявление опубликовано"><figcaption>Успех</figcaption></figure>
+        <figure class="case-captioned"><img src="assets/wlt/wlt14.webp" alt="Нет отзывов"><figcaption>Отзывы</figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- Design System -->
+  <section class="case-section">
+    <h2 class="case-section-title">Дизайн-система</h2>
+    <p class="case-block-desc">Гибкая система из <strong>50+ компонентов</strong>, более <strong>330 цветовых токенов</strong> для светлой и тёмной темы. Обеспечивает консистентность на <strong>250+ экранах</strong> и ускоряет разработку.</p>
+    <div class="case-full-media">
+      <img src="assets/wlt/case-waylot-ds.webp" alt="Дизайн-система Waylot">
+    </div>
+  </section>
+
+  <!-- App Store -->
+  <section class="case-section">
+    <h2 class="case-section-title">App Store</h2>
+    <div class="case-marquee">
+      <div class="case-marquee-track">
+        <img src="assets/wlt/1_ios_69.webp" alt="Find what you need nearby">
+        <img src="assets/wlt/2_ios_69.webp" alt="Search on the map">
+        <img src="assets/wlt/3_ios_69.webp" alt="Translate content instantly">
+        <img src="assets/wlt/4_ios_69.webp" alt="Sell in a few taps">
+        <img src="assets/wlt/5_ios_69.webp" alt="Everything you need to know">
+        <img src="assets/wlt/7_ios_69.webp" alt="Waylot — easy to find, easy to sell">
+        <img src="assets/wlt/1_ios_69.webp" alt="Find what you need nearby">
+        <img src="assets/wlt/2_ios_69.webp" alt="Search on the map">
+        <img src="assets/wlt/3_ios_69.webp" alt="Translate content instantly">
+        <img src="assets/wlt/4_ios_69.webp" alt="Sell in a few taps">
+        <img src="assets/wlt/5_ios_69.webp" alt="Everything you need to know">
+        <img src="assets/wlt/7_ios_69.webp" alt="Waylot — easy to find, easy to sell">
+      </div>
+    </div>
+  </section>
+
+  <!-- Navigation -->
+  <nav class="case-nav">
+    <a href="index.html" class="case-nav-link">← На главную</a>
+    <a href="tbank.html" class="case-nav-link">Обмен валют Т-Банк →</a>
+  </nav>
+
+
+  <script>
+    /* Scroll-triggered reveal for blocks */
+    const revealElements = document.querySelectorAll('.case-block, .case-full-media');
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry, i) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add('visible');
+          }, i * 80);
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+
+    /* Mobile sliders: one mockup per slide, swipeable */
+    function buildSliders() {
+      const isMobile = window.matchMedia('(max-width: 768px)').matches;
+
+      // Remove existing sliders
+      document.querySelectorAll('.case-slider, .slide-dots').forEach(el => el.remove());
+
+      if (!isMobile) return;
+
+      document.querySelectorAll('.case-media-duo, .case-media-trio, .case-media-quad, .case-cover-duo').forEach(original => {
+        const imgs = original.querySelectorAll('img');
+        if (imgs.length < 2) return;
+
+        const slider = document.createElement('div');
+        slider.className = 'case-slider';
+
+        const track = document.createElement('div');
+        track.className = 'case-slider-track';
+
+        const figures = original.querySelectorAll('.case-captioned');
+        const items = figures.length ? figures : imgs;
+
+        items.forEach(item => {
+          const slide = document.createElement('div');
+          slide.className = 'case-slider-slide';
+          slide.appendChild(item.cloneNode(true));
+          track.appendChild(slide);
+        });
+
+        slider.appendChild(track);
+
+        const dots = document.createElement('div');
+        dots.className = 'slide-dots';
+        items.forEach((_, i) => {
+          const dot = document.createElement('span');
+          dot.className = 'slide-dot' + (i === 0 ? ' active' : '');
+          dots.appendChild(dot);
+        });
+
+        original.parentNode.insertBefore(slider, original);
+        original.parentNode.insertBefore(dots, original);
+
+        track.addEventListener('scroll', () => {
+          const index = Math.round(track.scrollLeft / track.offsetWidth);
+          dots.querySelectorAll('.slide-dot').forEach((d, i) => {
+            d.classList.toggle('active', i === index);
+          });
+        }, { passive: true });
+      });
+    }
+
+    buildSliders();
+    window.matchMedia('(max-width: 768px)').addEventListener('change', buildSliders);
+
+    /* Back button fade-out transition */
+    document.querySelectorAll('.case-back, .case-nav-link').forEach(link => {
+      link.addEventListener('click', (e) => {
+        const href = link.getAttribute('href');
+        if (!href || href === '#') return;
+
+        e.preventDefault();
+        document.body.style.transition = 'opacity 0.3s ease';
+        document.body.style.opacity = '0';
+
+        setTimeout(() => {
+          window.location.href = href;
+        }, 300);
+      });
+    });
+  </script>
+</body>
+</html>
