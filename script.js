@@ -1,3 +1,12 @@
+/* ── Restore opacity on back/forward navigation ── */
+window.addEventListener('pageshow', (e) => {
+  if (e.persisted) {
+    document.body.style.opacity = '';
+    document.body.style.transition = '';
+    document.body.classList.remove('fade-out');
+  }
+});
+
 /* ── Page transitions ── */
 document.querySelectorAll('.card-case[href]').forEach(link => {
   link.addEventListener('click', (e) => {

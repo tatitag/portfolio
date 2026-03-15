@@ -213,6 +213,14 @@
   </nav>
 
   <script>
+    /* Restore opacity on back/forward navigation */
+    window.addEventListener('pageshow', (e) => {
+      if (e.persisted) {
+        document.body.style.opacity = '';
+        document.body.style.transition = '';
+      }
+    });
+
     /* Scroll-triggered reveal for blocks */
     const revealElements = document.querySelectorAll('.case-block, .case-full-media');
 
