@@ -1,10 +1,8 @@
 /* ── Restore opacity on back/forward navigation ── */
-window.addEventListener('pageshow', (e) => {
-  if (e.persisted) {
-    document.body.style.opacity = '';
-    document.body.style.transition = '';
-    document.body.classList.remove('fade-out');
-  }
+window.addEventListener('pageshow', () => {
+  document.body.style.opacity = '';
+  document.body.style.transition = '';
+  document.body.classList.remove('fade-out');
 });
 
 /* ── Page transitions ── */

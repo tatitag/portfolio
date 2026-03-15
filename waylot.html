@@ -179,11 +179,9 @@
 
   <script>
     /* Restore opacity on back/forward navigation */
-    window.addEventListener('pageshow', (e) => {
-      if (e.persisted) {
-        document.body.style.opacity = '';
-        document.body.style.transition = '';
-      }
+    window.addEventListener('pageshow', () => {
+      document.body.style.opacity = '';
+      document.body.style.transition = '';
     });
 
     /* Scroll-triggered reveal for blocks */
