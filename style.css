@@ -558,6 +558,16 @@ body.fade-out {
     display: none;
   }
 
+  .resume-header {
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .resume-date {
+    white-space: normal;
+    font-size: 13px;
+  }
+
   .sticky-contact-btn {
     background: var(--text);
     color: #FFFFFF;
