@@ -125,7 +125,7 @@ body {
 
 .card-title {
   font-family: 'Unbounded', sans-serif;
-  font-size: 28px;
+  font-size: 24px;
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: -0.01em;
@@ -162,6 +162,22 @@ body {
 
 .card-desc-short {
   display: none;
+}
+
+.card-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.card-tag {
+  padding: 4px 12px;
+  background: #F5F5F5;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text);
 }
 
 /* Contact */
@@ -411,10 +427,10 @@ body {
 }
 
 .skill-tag {
-  padding: 8px 16px;
+  padding: 4px 12px;
   background: #F5F5F5;
   border-radius: 100px;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 500;
   color: var(--text);
 }
@@ -609,14 +625,21 @@ body.fade-out {
     align-items: stretch;
   }
 
+  .card-case {
+    padding-top: 0;
+    overflow: hidden;
+  }
+
   .card-cover-wrap {
     display: flex;
     justify-content: center;
     align-items: flex-start;
     background: #F5F5F5;
-    border-radius: 12px;
+    border-radius: 0;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
     padding: 20px 0 0 0;
-    margin-bottom: 12px;
+    margin: 0 -36px 12px -36px;
     overflow: hidden;
     height: 250px;
   }
@@ -629,6 +652,10 @@ body.fade-out {
     margin-bottom: 0;
     background: none;
     filter: drop-shadow(0 8px 24px rgba(0, 0, 0, 0.1));
+  }
+
+  .card-case .card-label {
+    display: none;
   }
 
   .card-desc {
@@ -648,7 +675,7 @@ body.fade-out {
   }
 
   .card-title {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .contact-grid {
