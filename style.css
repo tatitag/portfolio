@@ -469,6 +469,31 @@ body {
   color: var(--text);
 }
 
+.sticky-header-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.sticky-resume-btn {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 6px 16px;
+  background: transparent;
+  border: 1px solid #DCDCDC;
+  border-radius: 100px;
+  transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.sticky-resume-btn:hover {
+  background: var(--text);
+  color: #FFFFFF;
+  border-color: var(--text);
+  transform: scale(1.05);
+}
+
 .sticky-contact-btn {
   font-size: 14px;
   font-weight: 500;
@@ -527,6 +552,10 @@ body.fade-out {
   .sticky-header.visible {
     top: 0;
     transform: none;
+  }
+
+  .sticky-resume-btn {
+    display: none;
   }
 
   .sticky-contact-btn {
